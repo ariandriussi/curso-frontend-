@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+   p::first-letter {
+       color: teal;
+   }
+   p::before{
+       content: "-";
+   }
+   p:hover::after {
+       content: ".";
+   }
+   
+   p {
+        color: salmon;
+    }
+    p:hover {
+    color: skyblue;
+    }
+
+    div p:nth-child(2)
+    {
+        color: violet;
+    }
+    ::placeholder {
+        color: tomato;
+    }
+    button {
+        color: rebeccapurple;
+    }
+    button:active {
+        color: red;
+    }
+
+    .red-input:focus {
+  background: yellow;
+  color: red;
+}
+
+.blue-input:focus {
+  background: yellow;
+  color: blue;
+}
+</style>
+</head>
+<body>
+   <p>Hola</p> 
+   <div>
+       <p>Platzi</p>
+       <p>Master</p>
+       <p>Lo mejor</p>
+   </div>
+   <input type="text" placeholder="name">
+<button>boton</button>
+
+<input class="red-input" value="Voy a ser de color rojo cuando enfoque."><br>
+<input class="blue-input" value="Voy a ser de color azul cuando enfoque.">
+</body>
+</html>
