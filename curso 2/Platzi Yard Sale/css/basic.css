@@ -1,0 +1,35 @@
+:root {
+    --backgroundColor: #ffffff;
+  --letterColor: #000;
+  --linksColor: #000;
+    --white: #ffffff; 
+    --black: #000000;
+    --card-size: 240px;
+   --very-light-pink: #c7c7c7;
+   --text-input-field: #f7f7f7;
+   --hospital-green: #acd9b2;
+   --sm: 14px;
+   --md: 16px;
+   --lg: 18px;
+  }
+  
+  * {
+    margin: 0%;
+    padding: 0%;
+    color: var(--letterColor);
+  }
+  
+  body {
+    background-color: var(--backgroundColor);
+  }
+  
+  ul,
+  li {
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--linksColor);
+  }
