@@ -1,0 +1,45 @@
+
+@import "./basic.css";
+
+.mobile-menu {
+    padding: 40px;
+}
+
+.mobile-menu ul li {
+    padding-top: 30px;
+   
+}
+.mobile_categories {
+    font-weight: bold;
+    font-size: var(--lg);
+    margin-bottom: 2em;
+
+}
+.mobile_acount {
+    font-weight: bold;
+    font-size: var(--lg);
+    margin-bottom: 10em;
+    border-top: 1px solid;
+    
+}
+
+.mobile_user li {
+ font-size: var(--md);
+
+ 
+}
+
+
+.mobile_user li:last-child a {
+    
+color: red;
+    
+}
+
+.mobile_user li:last-child  {
+    padding-top: 5px;
+
+   }
+
+
+
