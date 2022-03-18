@@ -25,6 +25,7 @@
 
 .mobile_user li {
  font-size: var(--md);
+ color: var(--very-light-pink:);
 
  
 }
@@ -32,7 +33,7 @@
 
 .mobile_user li:last-child a {
     
-color: red;
+color:  var( --hospital-green)
     
 }
 
