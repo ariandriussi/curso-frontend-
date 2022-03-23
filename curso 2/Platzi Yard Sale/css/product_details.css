@@ -1,0 +1,207 @@
+@import "./basic.css"; 
+
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+  }
+ 
+  
+  /* navbar  */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+    border-bottom: 1px solid var(--very-light-pink);
+  }
+  .menu {
+    display: none;
+  }
+  .logo {
+    width: 100px;
+  }
+  
+  .navbar-left ul,
+  .navbar-right ul {
+  
+    display: flex;
+    align-items: center;
+    height: 60px;
+  }
+ 
+  .navbar-left {
+    display: flex;
+  }
+  
+  .navbar-left ul {
+    margin-left: 12px;
+  }
+   
+  .navbar-left ul li a,
+  .navbar-right ul li a {
+    color: var(--very-light-pink);
+    border: 1px solid var(--white);
+    padding: 8px;
+    border-radius: 8px;
+  }
+   
+  .navbar-left ul li a:hover,
+  .navbar-right ul li a:hover {
+    border: 1px solid var(--hospital-green);
+    color: var(--hospital-green);
+  }
+  .navbar-email {
+    font-size: var(--sm);
+    margin-right: 12px;
+  }
+   
+  .navbar-shopping-cart {
+    position: relative;
+  }
+
+  
+  .navbar-shopping-cart div {
+    width: 16px;
+    height: 16px;
+    background-color: var(--hospital-green);
+    border-radius: 50%;
+    font-size: var(--sm);
+    font-weight: bold;
+    position: absolute;
+    top: -6px;
+    right: -3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+   /* navbar  */
+
+  /* contenido   */
+
+.product-detail {
+display: flex;
+justify-content: center;
+align-items: center;
+height: auto;
+position: relative;
+
+}
+.product-detail_close {
+    display: none;
+ 
+ 
+    
+}
+
+
+
+
+.product-detail_bike {
+    border-radius: 30px;
+    width: 45em;
+    height: 40em;
+    object-fit: cover;
+    margin-bottom: 40px;
+
+    
+}
+
+.points {
+    display: flex;
+    justify-content: center;
+  }
+  .points  li {
+    background: var(--very-light-pink);
+    width: 8px;
+    height: 8px;
+    margin: 8px 6px;
+    border-radius: 50%;
+    list-style-type: none;
+    cursor: pointer;
+  }
+  .points  .active {
+    background: var(--hospital-green);
+  }
+  .points  li:hover {
+    background: var(--hospital-green);
+  }
+
+.product-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.prodcut-info_p p:nth-child(1) {
+ font-weight: bold;
+ font-size: var(--lg);
+ margin-left: 20px;
+ margin-bottom: 10px;
+    
+ 
+
+}
+.prodcut-info_p p:nth-child(2) {
+    color: var(--very-light-pink);
+    font-size: var(--lg);
+    margin-left: 20px;
+    margin-bottom: 40px;
+    
+   
+   }
+
+   .prodcut-info_p p:nth-child(3) {
+    color: var(--very-light-pink);
+    font-size: var(--lg);
+    margin-left: 20px;
+   
+   }
+
+.primary-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    background: var(--hospital-green);
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+   width: 20em;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+    padding: 30px 0;
+}
+@media (max-width: 640px) {
+    .menu {
+      display: block;
+    }
+    .navbar-left ul {
+      display: none;
+    }
+    .navbar-email {
+      display: none;
+    }
+
+    .product-detail_close {
+    display: block;
+        width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 20px;
+   top: 13px;
+
+  
+    
+}
+  .product-detail_bike {
+        width: 410px;
+        height: 440px;
+        
+    }
+    .primary-button {
+        margin-top: 5em;
+    }
+  }

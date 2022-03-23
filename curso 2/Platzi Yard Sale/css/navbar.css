@@ -1,10 +1,12 @@
 @import "./basic.css";
 
+
+
 body {
     margin: 0;
     font-family: 'Quicksand', sans-serif;
   }
-
+ 
 nav {
     display: flex;
     justify-content: space-between;
@@ -17,6 +19,7 @@ nav {
   .logo {
     width: 100px;
   }
+  
   .navbar-left ul,
   .navbar-right ul {
   
@@ -24,12 +27,15 @@ nav {
     align-items: center;
     height: 60px;
   }
+ 
   .navbar-left {
     display: flex;
   }
+  
   .navbar-left ul {
     margin-left: 12px;
   }
+   
   .navbar-left ul li a,
   .navbar-right ul li a {
     color: var(--very-light-pink);
@@ -37,19 +43,22 @@ nav {
     padding: 8px;
     border-radius: 8px;
   }
+   
   .navbar-left ul li a:hover,
   .navbar-right ul li a:hover {
     border: 1px solid var(--hospital-green);
     color: var(--hospital-green);
   }
   .navbar-email {
-    color: var(--very-light-pink);
     font-size: var(--sm);
     margin-right: 12px;
   }
+   
   .navbar-shopping-cart {
     position: relative;
   }
+
+  
   .navbar-shopping-cart div {
     width: 16px;
     height: 16px;
@@ -64,7 +73,7 @@ nav {
     justify-content: center;
     align-items: center;
   }
-
+  
   @media (max-width: 640px) {
     .menu {
       display: block;
@@ -76,3 +85,4 @@ nav {
       display: none;
     }
   }
+  
