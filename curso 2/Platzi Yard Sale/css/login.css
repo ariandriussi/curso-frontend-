@@ -22,7 +22,7 @@
     }
 
  .login {
-   background-color:var(--white);
+   background-color: red;
    display: grid;
    place-items: center;
    height: 100vh;
